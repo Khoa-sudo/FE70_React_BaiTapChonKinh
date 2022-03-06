@@ -69,17 +69,11 @@ let dataGlasses = [
 ];
 
 //css
-// const styleGlasses = {
-//   width: "150px",
-//   top: "75px",
-//   right: "385px",
-//   opacity: "0.7",
-// };
-const styleGlasses={
-width: "280px",
-top: "144px",
-right: "97px",
-opacity: 0.7,
+const styleGlasses = {
+  width: '150px',
+  top: '82px',
+  right: '385px',
+  opacity: 0.7,
 }
 const infoGlasses = {
   width: "250px",
@@ -126,30 +120,7 @@ export default class BaiTapThuKinh extends Component {
             TRY GLASSES APP ONLINE
           </h3>
           <div className="container-fluid">
-
-            <div className="d-flex justify-content-center">              
-                <div className="card">
-                  <img className="card-img-top" src="./glassesImage/model.jpg" alt />
-                  <div className="card-body">
-                    <h4 className="card-title">Title</h4>
-                    <p className="card-text">Text</p>
-                  </div>
-                </div>
-                <div className="card position-relative">
-                  <img className="card-img-top" src="./glassesImage/model.jpg" alt />
-                  <div className="card-body">
-                  <img
-                    className="position-absolute"
-                    style={styleGlasses}
-                    src={this.state.imgSrc.url}
-                  />
-                    <h4 className="card-title">{this.state.imgSrc.name}</h4>
-                    <p className="card-text">{this.state.imgSrc.desc}</p>
-                  </div>
-                </div>
-            </div>
-
-            {/* <div className="row">
+            <div className="row d-flex">
               <div className="col-6">
                 <img
                   style={{ width: "250px", height: "320px" }}
@@ -184,7 +155,7 @@ export default class BaiTapThuKinh extends Component {
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div>
 
             {/* Hiển thị các kính được chọn */}
             <GlassesList
