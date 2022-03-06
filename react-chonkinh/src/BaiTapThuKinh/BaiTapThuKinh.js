@@ -72,17 +72,17 @@ let dataGlasses = [
 const styleGlasses = {
   width: "150px",
   top: "75px",
-  right: "262px",
+  right: "385px",
   opacity: "0.7",
 };
 const infoGlasses = {
   width: "250px",
   textAlign: "left",
-  left: "461px",
-  top: "199px",
+  right: "336px",
+  top: "212px",
   backgroundColor: "rgba(255,127,0,.5)",
   paddingLeft: "15px",
-  height: "105px",
+  height: "108px",
 };
 
 export default class BaiTapThuKinh extends Component {
@@ -122,10 +122,17 @@ export default class BaiTapThuKinh extends Component {
           <div className="container-fluid">
             <div className="row">
               <div className="col-6">
+                <img
+                  style={{ width: "250px", height:"320px"}}
+                  alt="model"
+                  src="./glassesImage/model.jpg"
+                ></img>
+              </div>
+              <div className="col-6">
                 <div className="position-relative">
                   <img
-                    className="position-absolute"
-                    style={{ width: "250px" }}
+                    // className="position-relative"
+                    style={{ width: "250px", height:"320px" }}
                     alt="model"
                     src="./glassesImage/model.jpg"
                   />
@@ -140,20 +147,13 @@ export default class BaiTapThuKinh extends Component {
                       className="font-weight-bold"
                     >
                       {this.state.imgSrc.name}
-                    </span>                    
+                    </span>
                     <br></br>
                     <span style={{ fontSize: "14px", fontWeight: "400" }}>
-                      {this.state.imgSrc.desc}
+                      <p className='mt-2'>{this.state.imgSrc.desc}</p>
                     </span>
                   </div>
                 </div>
-              </div>
-              <div className="col-6">
-                <img
-                  style={{ width: "250px" }}
-                  alt="model"
-                  src="./glassesImage/model.jpg"
-                ></img>
               </div>
             </div>
 

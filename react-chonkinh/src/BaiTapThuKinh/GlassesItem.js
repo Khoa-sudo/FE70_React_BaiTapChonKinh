@@ -5,7 +5,7 @@ export default class GlassesItem extends Component {
     let {glass,changeGlasses} = this.props;
     return (
       <img 
-      style ={{width:'100px',cursor:'pointer',marginRight:'18px'}}
+      style ={{width:'90px',cursor:'pointer',marginRight:'18px'}}
       src={glass.url} 
       onClick={()=>{
         changeGlasses(glass)
