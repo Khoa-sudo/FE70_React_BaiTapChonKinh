@@ -121,54 +121,27 @@ export default class BaiTapThuKinh extends Component {
           <div className="container-fluid">
             <div className="row d-flex justify-content-between">
               <div className="col-3">
-                <div className="card bg-dark text-white">
+                <div className="card bg-light text-white">
                   <img className="card-img" src="./glassesImage/model.jpg" alt />
                   
                   <div className="card-img-overlay">
-
                     <h4 className="card-title"></h4>
                     <p className="card-text"></p>
                   </div>
                 </div>
               </div>
-              <div className="col-3">
-                {/* <div className="position-relative">
-                  <img
-                    // className="position-relative"
-                    style={{ width: "250px", height: "320px" }}
-                    alt="model"
-                    src="./glassesImage/model.jpg"
-                  />
-                  <img
-                    className="position-absolute"
-                    style={styleGlasses}
-                    src={this.state.imgSrc.url}
-                  />
-                  <div className="position-absolute" style={infoGlasses}>
-                    <span
-                      style={{ color: "whitesmoke", fontSize: "18px" }}
-                      className="font-weight-bold"
-                    >
-                      {this.state.imgSrc.name}
-                    </span>
-                    <br></br>
-                    <span style={{ fontSize: "14px", fontWeight: "400" }}>
-                      <p className='mt-2'>{this.state.imgSrc.desc}</p>
-                    </span>
-                  </div>
-                </div> */}
-
-                <div className="card bg-dark text-white">
+              <div className="col-3">            
+                <div className="card bg-light text-white">
                   <img className="card-img" src="./glassesImage/model.jpg" alt />
                   <img
                     className="position-absolute"
                     style={styleGlasses}
                     src={this.state.imgSrc.url}
                   />
-                  <div className="card-img-overlay position-absolute pl-2" style={infoGlasses}>
+                  <div className="card-img-overlay position-absolute pl-2 p-1 text-left" style={infoGlasses}>
 
-                    <h4 className="card-title m-0 p-0 no-wrap">{this.state.imgSrc.name}</h4>
-                    <p className="card-text m-0 p-0 no-wrap">{this.state.imgSrc.desc}</p>
+                    <h4 className="card-title m-0 p-0 ">{this.state.imgSrc.name}</h4>
+                    <p className="card-text m-0 p-0 ">{this.state.imgSrc.desc}</p>
 
                   </div>
                 </div>
