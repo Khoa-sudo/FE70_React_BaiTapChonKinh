@@ -70,19 +70,18 @@ let dataGlasses = [
 
 //css
 const styleGlasses = {
-  width: '150px',
-  top: '82px',
-  right: '385px',
+  width: "62%",
+  top: "23%",
+  right: "18%",
   opacity: 0.7,
 }
 const infoGlasses = {
-  width: "250px",
+  width: "100%",
   textAlign: "left",
-  right: "336px",
-  top: "212px",
+  height:"30%",
+  top:"70%",
   backgroundColor: "rgba(255,127,0,.5)",
   paddingLeft: "15px",
-  height: "108px",
 };
 
 export default class BaiTapThuKinh extends Component {
@@ -120,16 +119,20 @@ export default class BaiTapThuKinh extends Component {
             TRY GLASSES APP ONLINE
           </h3>
           <div className="container-fluid">
-            <div className="row d-flex">
-              <div className="col-6">
-                <img
-                  style={{ width: "250px", height: "320px" }}
-                  alt="model"
-                  src="./glassesImage/model.jpg"
-                ></img>
+            <div className="row d-flex justify-content-between">
+              <div className="col-3">
+                <div className="card bg-dark text-white">
+                  <img className="card-img" src="./glassesImage/model.jpg" alt />
+                  
+                  <div className="card-img-overlay">
+
+                    <h4 className="card-title"></h4>
+                    <p className="card-text"></p>
+                  </div>
+                </div>
               </div>
-              <div className="col-6">
-                <div className="position-relative">
+              <div className="col-3">
+                {/* <div className="position-relative">
                   <img
                     // className="position-relative"
                     style={{ width: "250px", height: "320px" }}
@@ -153,7 +156,23 @@ export default class BaiTapThuKinh extends Component {
                       <p className='mt-2'>{this.state.imgSrc.desc}</p>
                     </span>
                   </div>
+                </div> */}
+
+                <div className="card bg-dark text-white">
+                  <img className="card-img" src="./glassesImage/model.jpg" alt />
+                  <img
+                    className="position-absolute"
+                    style={styleGlasses}
+                    src={this.state.imgSrc.url}
+                  />
+                  <div className="card-img-overlay position-absolute pl-2" style={infoGlasses}>
+
+                    <h4 className="card-title m-0 p-0 no-wrap">{this.state.imgSrc.name}</h4>
+                    <p className="card-text m-0 p-0 no-wrap">{this.state.imgSrc.desc}</p>
+
+                  </div>
                 </div>
+
               </div>
             </div>
 
