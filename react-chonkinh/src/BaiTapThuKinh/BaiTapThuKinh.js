@@ -77,9 +77,7 @@ const styleGlasses = {
 }
 const infoGlasses = {
   width: "100%",
-  textAlign: "left",
-  height:"30%",
-  top:"70%",
+  bottom: 0,
   backgroundColor: "rgba(255,127,0,.5)",
   paddingLeft: "15px",
 };
@@ -138,9 +136,8 @@ export default class BaiTapThuKinh extends Component {
                     style={styleGlasses}
                     src={this.state.imgSrc.url}
                   />
-                  <div className="card-img-overlay position-absolute pl-2 p-1 text-left" style={infoGlasses}>
-
-                    <h4 className="card-title m-0 p-0 ">{this.state.imgSrc.name}</h4>
+                  <div className="position-absolute pl-2 p-1 text-left" style={infoGlasses}>
+                    <h3 className="card-title m-0 p-0 ">{this.state.imgSrc.name}</h3>
                     <p className="card-text m-0 p-0 ">{this.state.imgSrc.desc}</p>
 
                   </div>
